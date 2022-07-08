@@ -7,7 +7,7 @@ import { CardActionArea } from "@mui/material";
 
 const MembershipDetailCard = () => {
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ width: "100%", margin: "0 auto" }}>
       <CardActionArea>
         <CardMedia
           component="img"
@@ -17,11 +17,12 @@ const MembershipDetailCard = () => {
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-            Lizard
+            Wine
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
+            You choose how many bottles and how often:
+            <li>1, 2 or 4 Deliveries per year</li>
+            <li>2, 4, 6 or 12 bottles Minimum per Delivery</li>
           </Typography>
         </CardContent>
       </CardActionArea>
