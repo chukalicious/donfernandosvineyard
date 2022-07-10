@@ -5,7 +5,7 @@ import Typography from "@mui/material/Typography";
 const Footer = () => {
   return (
     <Box>
-      <Paper elevation="2">
+      <Paper elevation={2}>
         <Typography>Footer</Typography>
       </Paper>
     </Box>

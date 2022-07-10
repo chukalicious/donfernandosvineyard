@@ -10,7 +10,7 @@ const About = () => {
   };
   return (
     <Box>
-      <Paper elevation="0" style={paperStyle}>
+      <Paper elevation={0} style={paperStyle}>
         <Typography align="center" component="h2" variant="h6" noWrap>
           Dos Fernandos' Vineyard
         </Typography>

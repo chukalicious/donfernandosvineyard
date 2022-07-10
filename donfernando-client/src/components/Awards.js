@@ -10,7 +10,7 @@ const Awards = () => {
   };
   return (
     <Box>
-      <Paper elevation="0" style={paperStyle}>
+      <Paper elevation={0} style={paperStyle}>
         <Typography align="center" component="h2" variant="h6" noWrap>
           We might need to change our labels...
         </Typography>
