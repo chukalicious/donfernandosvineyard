@@ -4,6 +4,7 @@ import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import Fade from "@mui/material/Fade";
 import MenuIcon from "@mui/icons-material/Menu";
+import { Link } from "react-router-dom";
 
 const NavMenu = () => {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -37,10 +38,21 @@ const NavMenu = () => {
         onClose={handleClose}
         TransitionComponent={Fade}
       >
-        <MenuItem onClick={handleClose}>Join the Club!</MenuItem>
-        <MenuItem onClick={handleClose}>Membership Details</MenuItem>
-        <MenuItem onClick={handleClose}>About Us</MenuItem>
-        <MenuItem onClick={handleClose}>Awards</MenuItem>
+        <Link to="/">
+          <MenuItem onClick={handleClose}>Home</MenuItem>
+        </Link>
+        <Link to="/signup">
+          <MenuItem onClick={handleClose}>Join the Club!</MenuItem>
+        </Link>
+        <Link to="/membershipDetails">
+          <MenuItem onClick={handleClose}>Membership Details</MenuItem>
+        </Link>
+        <Link to="/about">
+          <MenuItem onClick={handleClose}>About Us</MenuItem>
+        </Link>
+        <Link to="/awards">
+          <MenuItem onClick={handleClose}>Awards</MenuItem>
+        </Link>
       </Menu>
     </div>
   );
