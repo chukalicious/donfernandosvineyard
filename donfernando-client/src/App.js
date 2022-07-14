@@ -2,17 +2,20 @@ import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import Header from "./components/Header.js";
 import Home from "./components/Home";
+import Hero from "./components/Hero";
 import MembershipDetailCards from "./components/MembershipDetailCards.js";
 import SignUpForm from "./components/SignupForm.js";
 import About from "./components/About";
 import Awards from "./components/Awards";
 import Footer from "./components/Footer";
+
 import { Fragment } from "react";
 
 function App() {
   return (
     <>
       <Header />
+      <Hero />
       <Routes>
         <Fragment>
           <Route path="/" element={<Home />} />
